@@ -168,8 +168,8 @@ Incidents
      - Sentinel → Incidents → View new alert
 
 8. Investigate Using KQL
-<img src="./Logs%20%26Queries/Malicious%20VM%20Activity.png" height= "500" width="500">
-<img src="./Logs%20%26Queries/Security%20Events%20Process%20Creation.png" height= "500" width="500">
+<img src="./Logs%20%26%20Queries/Malicious%20VM%20Activity.png" height= "500" width="500">
+<img src="./Logs%20%26%20Queries/Security%20Events%20Process%20Creation.png" height= "500" width="500">
 
 
 
