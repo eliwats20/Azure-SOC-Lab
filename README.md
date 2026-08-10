@@ -32,12 +32,9 @@ Figure 1: Azure SOC Architecture Diagram
 Before deploying the Azure SOC Monitoring Lab, ensure the following requirements are met.
 
 Azure Requirements
-Active Azure subscription
-
-Ability to create and manage resources (Contributor or higher)
-
-Resource Group for SOC components
-
-Outbound internet access for the VM (required for AMA ingestion)
+- Active Azure subscription
+- Ability to create and manage resources (Contributor or higher)
+- Resource Group for SOC components
+- Outbound internet access for the VM (required for AMA ingestion)
 
 Licensing Requireme
