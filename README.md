@@ -171,9 +171,7 @@ Incidents
 <img src="./Logs%20%26%20Queries/Malicious%20VM%20Activity.png" height= "500" width="500">
 <img src="./Logs%20%26%20Queries/Security%20Events%20Process%20Creation.png" height= "500" width="500">
 
-
-
-10. Optional Logic Apps (Automated Response Playbooks)
+9. Optional Logic Apps (Automated Response Playbooks)
       - Logic Apps can be used to automate SOC response actions
       - To create a playbook:
           - Microsoft Sentinel → Automation → Create a new playbook
