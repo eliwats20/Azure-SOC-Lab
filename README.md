@@ -165,8 +165,12 @@ Incidents
      - Sentinel → Incidents → View new alert
 
 8. Investigate Using KQL
+<img src="./Configurations/Malicious%20VM%20Activity.png" height= "500" width="500">
+<img src="./Configurations/Security%20Events%20Process%20Creation.png" height= "500" width="500">
 
-9. Optional Logic Apps (Automated Response Playbooks)
+
+
+10. Optional Logic Apps (Automated Response Playbooks)
       - Logic Apps can be used to automate SOC response actions
       - To create a playbook:
           - Microsoft Sentinel → Automation → Create a new playbook
