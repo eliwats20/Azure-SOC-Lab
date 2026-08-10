@@ -116,18 +116,43 @@ Incidents
 
 # 🛠️ Deployment Steps
 1. Create Core Azure Resources
-  1. Resource Group
-  2. Create a dedicated resource group for all SOC components
-    - Navigate to Azure Portal → Resource Groups
-    - Create new RG (example: `SOC-Lab-RG`)
+  - Create a dedicated resource group for all SOC components
+  - Deploy Windows VM
+  - Create Log Analytics Workspace
+  - Enable Microsoft Sentinel
 
-Windows Virtual Machine \
-Deploy a Windows 10/11 or Server VM \
-  - Azure Portal → Virtual Machines → Create
-  - Choose size (B2s recommended for cost)
-  - Allow RDP inbound (port 3389)
-  - Place VM in the SOC resource group
+2. Install Azure Monitor Agent (AMA)
+  - VM → Extensions → Add → Azure Monitor
 
+3. Create Data Collection Rules
+   - Performance Metrics DCR
+       - Collects CPU, memory, disk, and other performance counters
+       - Destination: LAW
+       - Assign to VM
+       - AMA Automatically sends Heartbeat without needing a DCR
+    - Security Events DCR:
+      - Data source: Windows Security Logs
+      - Event log: Security
+      - Destination: LAW
+      - Assign to VM
 
+ 4. Validate Log Ingestion
+      - Heartbeat query: Heartbeat | take 10
+      - SecurityEvent query: SecurityEvent | take 10
+5. Create Analytics Rule
+     - Sentinel → Analytics → Create Rule
+     - Rule type: Scheduled
+     - Query: Failed Logons (EventID 4625)
+     - Enable incident creation
 
+6. Trigger Activity on VM
+     - Attempt multiple incorrect logins
 
+7. Confirm incident creation
+     - Sentinel → Incidents → View new alert
+
+8. Investigate Using KQL
+     - Example query:
+SecurityEvent / 
+| where EventID == 4625 /
+| summarize Attempts by Account, IPAddress
