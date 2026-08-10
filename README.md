@@ -152,7 +152,13 @@ Incidents
      - Sentinel → Incidents → View new alert
 
 8. Investigate Using KQL
-     - Example query:
-SecurityEvent \ 
-| where EventID == 4625 \
-| summarize Attempts by Account, IPAddress
+
+9. Optional Logic Apps (Automated Response Playbooks)
+      - Logic Apps can be used to automate SOC response actions
+      - To create a playbook:
+          - Microsoft Sentinel → Automation → Create a new playbook
+          - Choose a trigger such as "When an incident is created"
+          - Add actions (email, Teams message, block IP, etc.)
+      - Assign playbook to your analytics rule or incident
+      - Playbooks run automatically when conditions are met 
+
