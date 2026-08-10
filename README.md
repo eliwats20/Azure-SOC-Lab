@@ -148,6 +148,9 @@ Incidents
       - Event log: Security
       - Destination: LAW
       - Assign to VM
+      - **Make sure SensrSvc is configured to auto-start when VM is powered on**
+   <img src="./Configurations/SensrSvc%20Automatic%20Enable.png" height= "500" width="500">
+
 
  4. Validate Log Ingestion
       - Heartbeat query: Heartbeat | take 10
