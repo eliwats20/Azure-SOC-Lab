@@ -27,3 +27,17 @@ Figure 1: Azure SOC Architecture Diagram
 
 8. KQL Investigation  
    Analysts query **LAW** tables to validate and analyze events.
+
+📦 Prerequisites
+Before deploying the Azure SOC Monitoring Lab, ensure the following requirements are met.
+
+Azure Requirements
+Active Azure subscription
+
+Ability to create and manage resources (Contributor or higher)
+
+Resource Group for SOC components
+
+Outbound internet access for the VM (required for AMA ingestion)
+
+Licensing Requireme
