@@ -1,8 +1,11 @@
 # Azure-SOC-Lab
 <img src="./SOC%20Architecture/Azure%20SOC%20Diagram.png" height= "500" width="500">
 Figure 1: Azure SOC Architecture Diagram  
-  
-🔄 Data Flow Explanation The diagram above shows how telemetry moves through the Azure **SOC** pipeline:
+
+# Architecture Diagram Description  
+🔄 Data Flow Explanation 
+
+The diagram above shows how telemetry moves through the Azure **SOC** pipeline:
 
 1. Windows VM (Endpoint)  
    Generates Heartbeat and SecurityEvent logs.
@@ -31,10 +34,10 @@ Figure 1: Azure SOC Architecture Diagram
 📦 Prerequisites
 Before deploying the Azure SOC Monitoring Lab, ensure the following requirements are met.
 
-Azure Requirements
+# Azure Requirements
 - Active Azure subscription
 - Ability to create and manage resources (Contributor or higher)
 - Resource Group for SOC components
 - Outbound internet access for the VM (required for AMA ingestion)
 
-Licensing Requireme
+# Licensing Requirements
