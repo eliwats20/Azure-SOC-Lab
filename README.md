@@ -116,7 +116,7 @@ Incidents
 
 # 🛠️ Deployment Steps
 1. Create Core Azure Resources
-Resource Group
+Resource Group \
 Create a dedicated resource group for all SOC components
   - Navigate to Azure Portal → Resource Groups
   - Create new RG (example: `SOC-Lab-RG`)
