@@ -65,6 +65,9 @@ Before deploying the Azure SOC Monitoring Lab, ensure the following requirements
   - Correct subscription + resource group scope
   - Assignment to the VM
   - Output to the correct workspace
+<img src="./Configurations/Resource%20Providers%20Pt%201.png" height= "500" width="500">
+<img src="./Configurations/Resource%20Providers%20Pt%202.png" height= "500" width="500">
+
 
 - Log Analytics Workspace (LAW) requires:
   - Deployment before enabling Sentinel
@@ -120,9 +123,11 @@ Incidents
 <img src="./Configurations/rg-soc-lab%20.png" height= "500" width="500">
 
   - Deploy Windows VM
-<img src="./Configurations/Create%VM.png" height= "500" width="500">
+<img src="./Configurations/Create%20VM.png" height= "500" width="500">
 
   - Create Log Analytics Workspace
+<img src="./Configurations/Create%20LAW.png" height= "500" width="500">
+
   - Enable Microsoft Sentinel
 
 2. Install Azure Monitor Agent (AMA)
