@@ -1,4 +1,4 @@
-# Azure-SOC-Lab
+# Azure SOC Lab / 
 
 Azure SOC Monitoring Lab built with Azure Monitor Agent, Data Collection Rules, Log Analytics Workspace, and Microsoft Sentinel. Demonstrates end‑to‑end log ingestion, detection engineering, incident creation, and KQL‑based investigation.
 
