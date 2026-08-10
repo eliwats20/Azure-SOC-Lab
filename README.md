@@ -74,3 +74,42 @@ Before deploying the Azure SOC Monitoring Lab, ensure the following requirements
   - Workspace connection
   - Enabled analytics rules
   - Proper IAM roles (Sentinel Contributor, Log Analytics Contributor)
+
+# 🧩 Architecture Components
+This section explains each major component in your Azure SOC lab and how they fit together.
+
+Windows Virtual Machine
+- Acts as the monitored endpoint
+- Generates Heartbeat and SecurityEvent logs
+- Used to simulate authentication failures and attack activity
+
+Azure Monitor Agent (AMA)
+- Installed on the VM
+- Collects system + security logs
+- Sends data to Log Analytics Workspace based on DCRs
+
+Data Collection Rules (DCRs)
+- Define what telemetry is collected
+- Assign rules directly to the VM
+- Route logs to the correct workspace
+
+Log Analytics Workspace (LAW)
+- Central storage for all ingested logs
+- Supports KQL queries
+- Powers Sentinel analytics rules
+
+Microsoft Sentinel
+- Connects to LAW
+- Runs analytics rules
+- Generates incidents
+- Provides investigation tools
+
+Analytics Rules
+- Custom KQL logic
+- Detect brute‑force attempts, anomalies, and suspicious activity
+- Automatically create incidents
+
+Incidents
+- Contain evidence, entities, timelines
+- Used for SOC investigations
+- Triggered by analytics rules
