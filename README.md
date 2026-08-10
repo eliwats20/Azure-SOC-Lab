@@ -2,6 +2,7 @@
 
 Azure SOC Monitoring Lab built with Azure Monitor Agent, Data Collection Rules, Log Analytics Workspace, and Microsoft Sentinel. Demonstrates end‑to‑end log ingestion, detection engineering, incident creation, and KQL‑based investigation.
 
+ 
 <img src="./SOC%20Architecture/Azure%20SOC%20Diagram.png" height= "500" width="500">
 Figure 1: Azure SOC Architecture Diagram  
 
