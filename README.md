@@ -4,18 +4,34 @@ Figure 1: Azure SOC Architecture Diagram
 
 🔄 Data Flow Explanation The diagram above shows how telemetry moves through the Azure **SOC** pipeline:
 
-Windows VM (Endpoint) Generates Heartbeat and SecurityEvent logs.
+## Windows VM (Endpoint)  
 
-Azure Monitor Agent (**AMA**) Collects logs and forwards them based on DCRs.
+Generates Heartbeat and SecurityEvent logs.
 
-Data Collection Rules (DCRs) Define what logs are collected and where they go.
+## Azure Monitor Agent (AMA)  
 
-Log Analytics Workspace (**LAW**) Stores all ingested logs and enables **KQL** queries.
+Collects logs and forwards them based on DCRs.
 
-Microsoft Sentinel Connects to **LAW**, runs analytics rules, and creates incidents.
+## Data Collection Rules (DCRs)  
 
-Analytics Rules Detect suspicious activity (e.g., brute‑force attempts).
+Define what logs are collected and where they go.
 
-Incidents Automatically generated alerts with investigation details.
+## Log Analytics Workspace (LAW)  
 
-**KQL** Investigation Analysts query **LAW** tables to validate and analyze events.
+Stores all ingested logs and enables **KQL** queries.
+
+## Microsoft Sentinel  
+
+Connects to **LAW**, runs analytics rules, and creates incidents.
+
+## Analytics Rules  
+
+Detect suspicious activity (e.g., brute‑force attempts).
+
+## Incidents  
+
+Automatically generated alerts with investigation details.
+
+## KQL Investigation  
+
+Analysts query **LAW** tables to validate and analyze events.
