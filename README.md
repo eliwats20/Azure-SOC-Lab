@@ -132,6 +132,8 @@ Incidents
 
 2. Install Azure Monitor Agent (AMA)
   - VM → Extensions → Add → Azure Monitor
+<img src="./Configurations/Configure%20DCR%20for%20VM%20AMA.png" height= "500" width="500">
+
 
 3. Create Data Collection Rules
    - Performance Metrics DCR
