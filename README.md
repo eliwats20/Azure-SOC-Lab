@@ -120,16 +120,16 @@ Incidents
 # 🛠️ Deployment Steps
 1. Create Core Azure Resources
   - Create a dedicated resource group for all SOC components
-<img src="./Logs&amp;Queries/rg-soc-lab%20.png" height= "500" width="500">
+<img src="./Configurations/rg-soc-lab%20.png" height= "500" width="500">
 
   - Deploy Windows VM
-<img src="./Logs&amp;Queries/Create%20VM.png" height= "500" width="500">
+<img src="./Configurations/Create%20VM.png" height= "500" width="500">
 
   - Create Log Analytics Workspace
-<img src="./Logs&amp;Queries/Create%20LAW.png" height= "500" width="500">
+<img src="./Configurations/Create%20LAW.png" height= "500" width="500">
 
   - Enable Microsoft Sentinel
-<img src="./Logs&amp;Queries/Add%20Sentinel%20to%20LAW.png" height= "500" width="500">
+<img src="./Configurations/Add%20Sentinel%20to%20LAW.png" height= "500" width="500">
 
 
 2. Install Azure Monitor Agent (AMA)
@@ -168,8 +168,8 @@ Incidents
      - Sentinel → Incidents → View new alert
 
 8. Investigate Using KQL
-<img src="./Configurations/Malicious%20VM%20Activity.png" height= "500" width="500">
-<img src="./Configurations/Security%20Events%20Process%20Creation.png" height= "500" width="500">
+<img src="./Logs%20%26Queries/Malicious%20VM%20Activity.png" height= "500" width="500">
+<img src="./Logs%20%26Queries/Security%20Events%20Process%20Creation.png" height= "500" width="500">
 
 
 
