@@ -1,2 +1,2 @@
 # Azure-SOC-Lab
-<img src="./SOC%20Architecture/Azure%20SOC%20Diagram.png" height= "350" width="350">
+<img src="./SOC%20Architecture/Azure%20SOC%20Diagram.png" height= "500" width="500">
