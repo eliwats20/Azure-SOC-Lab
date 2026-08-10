@@ -31,7 +31,7 @@ The diagram above shows how telemetry moves through the Azure **SOC** pipeline:
 8. KQL Investigation  
    Analysts query **LAW** tables to validate and analyze events.
 
-📦 Prerequisites
+# Prerequisites
 Before deploying the Azure SOC Monitoring Lab, ensure the following requirements are met.
 
 # Azure Requirements
@@ -41,3 +41,21 @@ Before deploying the Azure SOC Monitoring Lab, ensure the following requirements
 - Outbound internet access for the VM (required for AMA ingestion)
 
 # Licensing Requirements
+- Optional: Microsoft Defender for Endpoint (for richer telemetry)
+
+- Subscription must support:
+-- Virtual Machines
+-- Log Analytics Workspace
+-- Azure Monitor Agent
+-- Microsoft Sentinel
+-- Logic Apps (optional)
+
+# Local Requirements
+
+Azure **CLI** installed (optional but recommended)
+
+**RDP** client to access the Windows VM
+
+Basic familiarity with **KQL** (Kusto Query Language)
+
+### Service Dependencies
