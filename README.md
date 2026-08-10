@@ -41,8 +41,8 @@ Before deploying the Azure SOC Monitoring Lab, ensure the following requirements
 - Outbound internet access for the VM (required for AMA ingestion)
 
 ### Licensing Requirements
+- Microsoft Sentinel enabled on the Log Analytics Workspace
 - Optional: Microsoft Defender for Endpoint (for richer telemetry)
-
 - Subscription must support:
   - Virtual Machines
   - Log Analytics Workspace
@@ -51,11 +51,26 @@ Before deploying the Azure SOC Monitoring Lab, ensure the following requirements
   - Logic Apps (optional)
 
 ### Local Requirements
-
-Azure **CLI** installed (optional but recommended)
-
-**RDP** client to access the Windows VM
-
-Basic familiarity with **KQL** (Kusto Query Language)
+- Azure **CLI** installed (optional but recommended)
+- **RDP** client to access the Windows VM
+- Basic familiarity with **KQL** (Kusto Query Language)
 
 ### Service Dependencies
+- Azure Monitor Agent (AMA) requires:
+  - A Data Collection Rule
+  - VM access to Azure Monitor ingestion endpoints
+  - A linked Log Analytics Workspace
+
+- Data Collection Rules (DCRs) require:
+  - Correct subscription + resource group scope
+  - Assignment to the VM
+  - Output to the correct workspace
+
+- Log Analytics Workspace (LAW) requires:
+  - Deployment before enabling Sentinel
+  - Proper retention settings
+  - Connection to Sentinel
+  - Microsoft Sentinel requires:
+  - Workspace connection
+  - Enabled analytics rules
+  - Proper IAM roles (Sentinel Contributor, Log Analytics Contributor)
