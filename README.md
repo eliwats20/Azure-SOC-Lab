@@ -4,7 +4,7 @@ Figure 1: Azure SOC Architecture Diagram
 
 🔄 Data Flow Explanation The diagram above shows how telemetry moves through the Azure **SOC** pipeline:
 
-## Windows VM (Endpoint)  
+1. Windows VM (Endpoint)  
 
 Generates Heartbeat and SecurityEvent logs.
 
