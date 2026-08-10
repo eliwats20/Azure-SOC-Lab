@@ -34,13 +34,13 @@ The diagram above shows how telemetry moves through the Azure **SOC** pipeline:
 # Prerequisites
 Before deploying the Azure SOC Monitoring Lab, ensure the following requirements are met.
 
-# Azure Requirements
+## Azure Requirements
 - Active Azure subscription
 - Ability to create and manage resources (Contributor or higher)
 - Resource Group for SOC components
 - Outbound internet access for the VM (required for AMA ingestion)
 
-# Licensing Requirements
+## Licensing Requirements
 - Optional: Microsoft Defender for Endpoint (for richer telemetry)
 
 - Subscription must support:
@@ -50,7 +50,7 @@ Before deploying the Azure SOC Monitoring Lab, ensure the following requirements
 -- Microsoft Sentinel
 -- Logic Apps (optional)
 
-# Local Requirements
+## Local Requirements
 
 Azure **CLI** installed (optional but recommended)
 
