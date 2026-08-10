@@ -117,7 +117,7 @@ Incidents
 # 🛠️ Deployment Steps
 1. Create Core Azure Resources
   - Create a dedicated resource group for all SOC components
-<img src="./Configurations/rg-soc-lab%20.png" height= "500" width="500"> /
+<img src="./Configurations/rg-soc-lab%20.png" height= "500" width="500">
   - Deploy Windows VM
   - Create Log Analytics Workspace
   - Enable Microsoft Sentinel
