@@ -65,9 +65,7 @@ Before deploying the Azure SOC Monitoring Lab, ensure the following requirements
   - Correct subscription + resource group scope
   - Assignment to the VM
   - Output to the correct workspace
-<img src="./Configurations/Install%20Free%20Data%20COnnectors%20to%20Sentinel workspace.png" height= "500" width="500">
-
-
+<img src="./Configurations/Data%20Connectors.png" height= "500" width="500">
 
 - Log Analytics Workspace (LAW) requires:
   - Deployment before enabling Sentinel
