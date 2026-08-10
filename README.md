@@ -153,6 +153,6 @@ Incidents
 
 8. Investigate Using KQL
      - Example query:
-SecurityEvent / 
-| where EventID == 4625 /
+SecurityEvent \ 
+| where EventID == 4625 \
 | summarize Attempts by Account, IPAddress
