@@ -120,6 +120,8 @@ Incidents
 <img src="./Configurations/rg-soc-lab%20.png" height= "500" width="500">
 
   - Deploy Windows VM
+<img src="./Configurations/Create%VM.png" height= "500" width="500">
+
   - Create Log Analytics Workspace
   - Enable Microsoft Sentinel
 
