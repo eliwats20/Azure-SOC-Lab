@@ -129,6 +129,8 @@ Incidents
 <img src="./Configurations/Create%20LAW.png" height= "500" width="500">
 
   - Enable Microsoft Sentinel
+<img src="./Configurations/Add%20Sentinel%20to%20LAW.png" height= "500" width="500">
+
 
 2. Install Azure Monitor Agent (AMA)
   - VM → Extensions → Add → Azure Monitor
