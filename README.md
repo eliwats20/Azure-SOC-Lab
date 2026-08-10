@@ -1,2 +1,2 @@
 # Azure-SOC-Lab
-![Azure SOC Architecture](./architecture/soc-lab-diagram.png)
+![Azure SOC Architecture](./SOC Architecture/Azure SOC Diagram.png)
