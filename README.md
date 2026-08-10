@@ -120,16 +120,16 @@ Incidents
 # 🛠️ Deployment Steps
 1. Create Core Azure Resources
   - Create a dedicated resource group for all SOC components
-<img src="./Configurations/rg-soc-lab%20.png" height= "500" width="500">
+<img src="./Logs&amp;Queries/rg-soc-lab%20.png" height= "500" width="500">
 
   - Deploy Windows VM
-<img src="./Configurations/Create%20VM.png" height= "500" width="500">
+<img src="./Logs&amp;Queries/Create%20VM.png" height= "500" width="500">
 
   - Create Log Analytics Workspace
-<img src="./Configurations/Create%20LAW.png" height= "500" width="500">
+<img src="./Logs&amp;Queries/Create%20LAW.png" height= "500" width="500">
 
   - Enable Microsoft Sentinel
-<img src="./Configurations/Add%20Sentinel%20to%20LAW.png" height= "500" width="500">
+<img src="./Logs&amp;Queries/Add%20Sentinel%20to%20LAW.png" height= "500" width="500">
 
 
 2. Install Azure Monitor Agent (AMA)
