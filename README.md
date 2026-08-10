@@ -113,3 +113,10 @@ Incidents
 - Contain evidence, entities, timelines
 - Used for SOC investigations
 - Triggered by analytics rules
+
+# 🛠️ Deployment Steps
+1. Create Core Azure Resources
+Create a dedicated resource group for all SOC components
+- Navigate to Azure Portal → Resource Groups
+- Create new RG (example: `SOC-Lab-RG`)
+
